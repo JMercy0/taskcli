@@ -131,6 +131,16 @@ program
     showSummary();
   });
 
+// === Interactive TUI Dashboard ===
+program
+  .command('ui')
+  .alias('dashboard')
+  .description('Launch interactive TUI dashboard')
+  .action(() => {
+    const launchDashboard = require('../ui/dashboard');
+    launchDashboard();
+  });
+
 program.parse(process.argv);
 
 // Show help if no command provided
