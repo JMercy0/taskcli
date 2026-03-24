@@ -1,0 +1,23 @@
+{
+  "name": "taskcli",
+  "version": "1.0.0",
+  "description": "A command-line task management tool for developers",
+  "main": "bin/index.js",
+  "bin": {
+    "taskcli": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "taskcli": "node bin/index.js"
+  },
+  "keywords": ["cli", "task", "management", "productivity"],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "better-sqlite3": "^11.0.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "inquirer": "^8.2.6"
+  }
+}
